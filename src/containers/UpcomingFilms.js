@@ -36,10 +36,13 @@ class UpcomingFilms extends React.Component {
 
     render() {
         return (
-            <>
-                <h1>Upcoming Film Releases for UK</h1>
+            <div className="upcoming-films">
+                <h2>Upcoming Film Releases for UK</h2>
                 <FilmList films={this.state.films} />
-            </>
+                <a href="https://www.imdb.com/calendar/?region=gb" className="button" >
+                  View more upcoming releases {">>"}
+                </a>
+            </div>
         );
     }
 }
