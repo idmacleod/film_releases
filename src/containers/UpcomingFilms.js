@@ -1,4 +1,5 @@
 import React from 'react';
+import FilmList from '../components/FilmList';
 
 class UpcomingFilms extends React.Component {
     constructor(props) {
@@ -34,7 +35,12 @@ class UpcomingFilms extends React.Component {
     }
 
     render() {
-        return <h1>Upcoming Film Releases for UK</h1>;
+        return (
+            <>
+                <h1>Upcoming Film Releases for UK</h1>
+                <FilmList />
+            </>
+        );
     }
 }
 
