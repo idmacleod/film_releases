@@ -38,7 +38,7 @@ class UpcomingFilms extends React.Component {
         return (
             <>
                 <h1>Upcoming Film Releases for UK</h1>
-                <FilmList />
+                <FilmList films={this.state.films} />
             </>
         );
     }

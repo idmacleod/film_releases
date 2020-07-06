@@ -2,9 +2,11 @@ import React from 'react';
 
 class FilmList extends React.Component {
     render() {
+        const filmNodes = this.props.films.map(film => <li>{film.name}</li>);
+
         return (
             <ul>
-                <li>I am a list of films...</li>
+                {filmNodes}
             </ul>
         );
     }
