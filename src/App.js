@@ -1,9 +1,10 @@
 import React from 'react';
+import UpcomingFilms from './containers/UpcomingFilms';
 
 function App() {
   return (
     <div className="App">
-      Hello World!
+      <UpcomingFilms />
     </div>
   );
 }
